@@ -41,7 +41,7 @@ blockquote {
   font-style: italic;
 }
 hr.small {
-  max-width: 100px;
+  max-width: 150px;
   margin: 15px auto;
   border-width: 4px;
   border-color: white;
@@ -263,18 +263,9 @@ hr.small {
   border-bottom-right-radius: 5px;
   border-bottom-left-radius: 5px;
 }
-footer {
-  padding: 50px 0 65px;
-}
-footer .list-inline {
-  margin: 0;
-  padding: 0;
-}
-footer .copyright {
-  font-size: 14px;
-  text-align: center;
-  margin-bottom: 0;
-}
+
+
+
 .floating-label-form-group {
   font-size: 14px;
   position: relative;
@@ -392,4 +383,9 @@ img::-moz-selection {
 }
 body {
   webkit-tap-highlight-color: #0085a1;
+}
+
+.top-links {
+  color: white;
+
 }

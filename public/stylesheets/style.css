@@ -22,3 +22,61 @@ a.danger {
 .spacing {
   margin-bottom: 20px;
 }
+
+footer {
+
+  background-color: #4E4654;
+  color: aliceblue;
+
+  position: fixed;
+  z-index: 10;
+  height: 3em;
+  width: 100%;
+  margin-top: -1em;
+  text-align: center;
+  bottom: 0px;
+
+}
+footer p {
+  margin-bottom: 20px;
+}
+.fullPost {
+  margin-left: auto;
+  margin-right: auto;
+
+}
+header {
+  max-height: 500px;
+}
+
+
+#main-title {
+  font-size: 600%;
+  margin-bottom: 150px;
+}
+.selected {
+  background-color: #CFD8DC !important;
+  color: white;
+}
+.posts {
+  margin-left: auto;
+  margin-right: auto;
+
+  list-style-type: none;
+  padding: 20px;
+  width: 500px;
+  text-align: center;
+}
+.posts li {
+  cursor: pointer;
+
+}
+.posts li.selected:hover {
+  background-color: #BBD8DC !important;
+  color: white;
+}
+.posts li:hover {
+  color: #607D8B;
+  background-color: #DDD;
+  left: .1em;
+}
