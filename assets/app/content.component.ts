@@ -2,20 +2,19 @@ import {Component, OnInit} from "@angular/core";
 import {BlogPost} from "./blogPost";
 import {BodyContentComponent} from "./body-content.component";
 import {BlogPostService} from './blogPost.service';
+import { ROUTER_DIRECTIVES} from "@angular/router";
 
 
 
 @Component({
     selector: "my-content",
     template: `
+         
          <header id="top-container" class="intro-header" style="background-image: url('images/lake.jpg')">
             <div class="container">
                 <div class="row">
                     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                        <ul class="nav navbar-nav navbar-right">
-                            <li><a class="top-links">Home</a></li>
-                            <li><a class="top-links" href="#">About</a></li>
-                        </ul>
+                        
                     </div>
                     <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
                         <div class="site-heading">
@@ -44,9 +43,11 @@ import {BlogPostService} from './blogPost.service';
         <my-body-content [blogPost]="selectedBlogPost"></my-body-content>
        
     `,
-    directives: [BodyContentComponent],
+    directives: [BodyContentComponent,ROUTER_DIRECTIVES],
     providers: [BlogPostService]
 })
+
+
 export class ContentComponent implements OnInit {
 
     title = "Grady's Blog Posts";
